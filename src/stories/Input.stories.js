@@ -30,3 +30,11 @@ number.args = {
   type:'number',
   placeholder:'Enter your age'
 };
+
+export const withPrefix = Template.bind({});
+withPrefix.args = {
+  name:'mobile',
+  type:'number',
+  placeholder:'Enter your mobile number',
+  additionalClass:'padding-prefix'
+}
