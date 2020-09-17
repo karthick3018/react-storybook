@@ -21,6 +21,12 @@ export const noLabel = Template.bind({});
 noLabel.args = {
   name: 'name',
   type:'string',
-  placeholder:'Enter the name'
+  placeholder:'Enter your name'
 };
 
+export const number = Template.bind({});
+number.args = {
+  name: 'age',
+  type:'number',
+  placeholder:'Enter your age'
+};
