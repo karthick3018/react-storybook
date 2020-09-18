@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {InputBox} from './Input';
+import InputBox from './Input';
 
 export default {
   title: 'Example/Input',

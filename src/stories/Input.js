@@ -1,7 +1,7 @@
 import React from 'react';
 import './input.css';
 
-export const InputBox = ({label,name,type,placeholder,additionalClass,...props}) => {
+const InputBox = ({label,name,type,placeholder,additionalClass,...props}) => {
   return(
     <div className="input-div">
       {label && <label>{label}</label>}
@@ -13,7 +13,7 @@ export const InputBox = ({label,name,type,placeholder,additionalClass,...props})
         onChange={()=>{}}
         {...props}
       />
-      {additionalClass&& <span className="prefix">+91</span>}
+      {additionalClass && <span className="prefix">+91</span>}
     </div>
   )
 }
@@ -23,5 +23,7 @@ InputBox.defaultProps = {
   type:'string',
   additionalClass:''
 };
+
+export default InputBox;
 
  
